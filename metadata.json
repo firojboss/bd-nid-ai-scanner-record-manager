@@ -1,0 +1,6 @@
+{
+  "name": "BD NID AI Scanner & Record Manager",
+  "description": "Smart & Non-Smart Bangladesh NID AI scanner powered by Gemini with field extraction, accuracy score, editable verification, and admin dashboard.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
