@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ViewMode, NIDRecord } from "./types.js";
 import { Navbar } from "./components/Navbar.js";
+import { LoginGate } from "./components/LoginGate.js";
 import { ScannerView } from "./components/Scanner/ScannerView.js";
 import { RecordsDashboard } from "./components/Dashboard/RecordsDashboard.js";
 import { AnalyticsView } from "./components/Analytics/AnalyticsView.js";
@@ -68,6 +69,7 @@ export default function App() {
   };
 
   return (
+    <LoginGate>
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-['Plus_Jakarta_Sans','Hind_Siliguri',sans-serif]">
       {/* Navigation Bar */}
       <Navbar
@@ -125,5 +127,6 @@ export default function App() {
       {/* Live Client Intelligence & BDT Time Footer */}
       <LiveClientIntelligenceFooter lang={lang} />
     </div>
+    </LoginGate>
   );
 }

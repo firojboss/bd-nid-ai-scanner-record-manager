@@ -13,9 +13,9 @@ import {
   Info,
   X,
   Activity,
-  Cpu,
   Eye,
   Zap,
+  LogOut,
 } from "lucide-react";
 import { detectFullClientIntelligence, ClientIntelligence } from "../../utils/deviceDetector.js";
 import { getLiveBDTClock } from "../../utils/bdtTime.js";
@@ -247,6 +247,19 @@ export const LiveClientIntelligenceFooter: React.FC<FooterProps> = ({ lang }) =>
               <span>Screen: {clientInfo.screenResolution}</span>
               <span>•</span>
               <span>Bangladesh Smart & Laminated NID Support</span>
+              <span>•</span>
+              <button
+                type="button"
+                onClick={() => {
+                  try { localStorage.removeItem("bd_nid_auth_ts"); } catch {}
+                  window.location.reload();
+                }}
+                className="flex items-center gap-1 text-rose-400 hover:text-rose-300 font-semibold transition-colors"
+                title={lang === "bn" ? "লগআউট করুন" : "Logout"}
+              >
+                <LogOut className="w-3 h-3" />
+                <span>{lang === "bn" ? "লগআউট" : "Logout"}</span>
+              </button>
             </div>
           </div>
         </div>

@@ -44,12 +44,11 @@ export const Navbar: React.FC<NavbarProps> = ({
             title="BD NID AI Scanner - Home"
             className="flex items-center cursor-pointer group flex-shrink-0"
           >
-            <div className="relative w-8 h-8 sm:w-8.5 sm:h-8.5 rounded-xl bg-gradient-to-br from-emerald-500 via-teal-600 to-cyan-600 p-0.5 shadow-md shadow-emerald-950/40 flex items-center justify-center overflow-hidden group-hover:scale-105 transition-all">
-              <div className="w-full h-full bg-slate-900 rounded-[10px] flex items-center justify-center relative">
-                <div className="w-3.5 h-3.5 rounded-full bg-red-600 absolute opacity-85 animate-pulse-subtle"></div>
-                <Scan className="w-4 h-4 text-emerald-300 relative z-10" />
-              </div>
-            </div>
+            <img
+              src="/assets/icon.png"
+              alt="BD NID AI Scanner"
+              className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl object-cover shadow-md shadow-emerald-950/40 group-hover:scale-105 transition-all"
+            />
           </div>
 
           {/* Center / Navigation Tabs (Desktop & Tablet) */}
