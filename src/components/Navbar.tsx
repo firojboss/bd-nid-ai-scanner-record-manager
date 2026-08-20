@@ -45,7 +45,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             className="flex items-center cursor-pointer group flex-shrink-0"
           >
             <img
-              src="/assets/icon.png"
+              src="https://res.cloudinary.com/dxyt6zr4m/image/upload/v1787228329/icon_qyd6kw.png"
               alt="BD NID AI Scanner"
               className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl object-cover shadow-md shadow-emerald-950/40 group-hover:scale-105 transition-all"
             />
