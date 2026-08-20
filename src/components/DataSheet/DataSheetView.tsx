@@ -414,28 +414,9 @@ export const DataSheetView: React.FC<DataSheetViewProps> = ({
 
   return (
     <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-6 space-y-4">
-      {/* Top Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <div>
-          <div className="flex items-center space-x-2.5">
-            <div className="p-2 rounded-xl bg-blue-600/20 text-blue-400 border border-blue-500/30">
-              <FileSpreadsheet className="w-6 h-6" />
-            </div>
-            <div>
-              <h1 className="text-2xl font-black text-white tracking-tight flex items-center gap-2">
-                <span>{lang === "bn" ? "DataSheet (Excel Multi-Site Accounts)" : "DataSheet Management"}</span>
-                <span className="text-xs px-2.5 py-0.5 rounded-full font-mono bg-blue-500/20 text-blue-400 border border-blue-500/30">
-                  {totalAccounts} {lang === "bn" ? "অ্যাকাউন্ট" : "Accounts"}
-                </span>
-              </h1>
-              <p className="text-xs sm:text-sm text-slate-400">
-                {lang === "bn"
-                  ? "১টি NID তথ্য দিয়ে ১৬টি আলাদা সাইটের সাইনআপ ডাটা, ব্যালেন্স, ২এফএ ও টাইমস্ট্যাম্প এক্সেল শিটে ম্যানেজ করুন"
-                  : "Excel-sheet styled manager for 16 multi-site accounts linked to 1 single NID profile"}
-              </p>
-            </div>
-          </div>
-        </div>
+      {/* Top Action Bar (Compact) */}
+      <div className="flex flex-wrap items-center justify-end gap-2">
+
 
         {/* Action Buttons */}
         <div className="flex flex-wrap items-center gap-2">
